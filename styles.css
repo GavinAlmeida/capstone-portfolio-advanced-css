@@ -1,0 +1,391 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+
+.hero {
+    background-color: #fff1d0;
+    height: 80vh;
+}
+
+.hero > h1 {
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+    font-family: "Noto Serif", serif;
+    font-weight: 900;
+}
+
+.hero > h2 {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-family: "Josefin Slab", serif;
+    font-weight: 600;
+}
+
+.hero > .pic1 {
+    height: 200px;
+    position: absolute; /*keeps leaf from pushing down headers as it is positioned relative to corner of screen aka absolute*/
+    padding-top: 20px;
+}
+
+.hero > .pic2 {
+    height: 200px;
+    position: absolute; /*positioned at from corner of screen so it moves independently */
+    right: 0px;
+    top: 50vh;
+}
+
+.about-me {
+    background-color: #C96868;
+}
+
+.profile-container { /*have to put profile image in a container to be able to use display flex, if you dont use a container it is display flexing itself as it is not inside an object*/
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    box-sizing: content-box; /*prevents image from disappearing when adding padding to top of image. profile-container is a child element of the parent about-me, this allow it to move independently outside of the about-me container, without this the image has no where to go as the default border box sizing is border-box which puts the profile-container inside strictly with no movement as it will mess with the parent container about-me*/
+}
+
+.profile-pic {
+    height: 200px;
+    border-radius: 100px;
+}
+
+.about-me > h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    font-size: 3em;
+    font-weight: 900;
+    font-family: "Noto Serif", serif;
+}
+
+.about-me > p {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 200px;
+    font-weight: 600;
+    font-size: 1.5em;
+    font-family: "Josefin Slab", serif;
+}
+
+.skills {
+    background-color: #7EACB5;
+}
+
+.skills > h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    font-weight: 900;
+    font-size: 2.5em;
+    font-family: "Noto Serif", serif;
+}
+
+.skills > h3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    font-weight: 900;
+    font-family: "Noto Serif", serif;
+}
+
+.skills > p {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 400px;
+    padding-right: 400px;
+    font-weight: 600;
+    font-family: "Josefin Slab", serif;
+    text-align: center;
+}
+
+.ux-ui-div {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.ux-ui-img {
+    height: 200px;
+}
+
+.coding-div {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.coding-img {
+    height: 200px;
+}
+
+.programming-div {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.javascript-logo {
+    height: 200px;
+    margin: 20px;
+}
+
+.python-logo {
+    height: 200px;
+    margin: 20px;
+}
+
+.skills-bottom-div {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.food-icon {
+    height: 200px;
+    margin: 20px;
+}
+
+.computer-icon {
+    height: 200px;
+    margin: 20px;
+}
+
+.cybersecurity-icon {
+    height: 200px;
+    margin: 20px;
+}
+
+.contact-me {
+    background-color: #96CEB4;
+}
+ 
+.contact-me > h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.chill-div {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.chill-hand {
+    height: 100px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.button > a {
+    color: black;
+    font-weight: 900;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+}
+
+.button > a:hover {
+    color: white;
+    background-color: black;
+}
+
+.footer {
+    background-color: #C96868;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.socials > a {
+    margin: 20px;
+    color: black;
+    font-weight: 900;
+}
+
+.socials > a:hover {
+    color: white;
+}
+
+.logos { /*put images in div called logo so that I could control them in a container instead of indiviudally*/
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    box-sizing: content-box;
+}
+
+.logos > img {
+    height: 50px;
+    margin: 24px;
+}
+
+.watermark {
+    background-color: #fff1d0;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.credit {
+    background-color: #fff1d0;
+    display: flex;
+    align-items: center; /*aligns items in center as switching to columns makes items go along y axis, not x axis like justify content, center*/
+    flex-direction: column; /*turns row into column*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 10px;
+}
+
+.credit > a {
+    color: black;
+}
+
+.credit > a:hover {
+    color: white;
+    font-weight: 900;
+}
+
+@media (max-width: 1100px) { /*for mobile responsivness, anything less than or equal to 1100px th objects will shrink by half to accommodate smaller pixel sizes like mobile phones, anything greater it will revert to original sizes in css*/
+
+    .hero {
+        height: 65vh; /*lines up leaf to bottom of the div, instead of using padding for hero, I used view height for responsiveness*/
+    }
+
+    .hero > h1 {
+        font-size: 2em;
+    }
+
+    .hero > h2 {
+        font-size: 1em;
+    }
+
+    .hero > .pic1 {
+        height: 100px;
+    }
+    
+    .hero > .pic2 {
+        height: 100px;
+    }
+
+    .profile-container {
+        padding-top: 50px;
+    }
+
+    .profile-pic {
+        height: 100px;
+    }
+
+    .about-me > h2 {
+        font-size: 1.5em;
+        padding-top: 50px;
+    }
+
+    .about-me > p {
+        font-size: .75em;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 50px;
+    }
+
+    .skills > h2 {
+        font-size: 1.5em;
+        padding-top: 50px;
+    }
+
+    .skills > h3 {
+        font-size: .75em;
+        padding-top: 50px;
+    }
+
+    .skills > p {
+        font-size: .85em;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .ux-ui-img {
+        height: 100px;
+    }
+
+    .coding-img {
+        height: 100px;
+    }
+
+    .javascript-logo {
+        height: 100px;
+        margin: 10px;
+    }
+
+    .python-logo {
+        height: 100px;
+        margin: 10px;
+    }
+
+    .food-icon {
+        height: 100px;
+        margin: 10px;
+    }
+
+    .computer-icon {
+        height: 100px;
+        margin: 10px;
+    }
+
+    .cybersecurity-icon {
+        height: 100px;
+        margin: 10px;
+    }
+
+    .skills-bottom-div {
+        padding-bottom: 50px;
+    }
+
+    .contact-me > h2 {
+        padding-top: 50px;
+    }
+
+    .button {
+        padding-bottom: 50px;
+    }
+
+    .logos {
+        padding-top: 50px ;
+    }
+
+    .socials {
+        padding-bottom: 50px;
+    }
+
+    .watermark {
+        padding-top: 50px;
+    }
+
+    .credit {
+        padding-bottom: 25px;
+    }
+  }
